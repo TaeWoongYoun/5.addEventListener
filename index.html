@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="alert-box" id="alert">
+        <p id="name">알림창임</p>
+        <button id="close">알림창닫기</button>
+       </div>
+       <button onclick="x();">아이디를 입력하세요</button>
+       <button onclick="y();">비밀번호를 입력하세요</button>
+    
+       <script>
+        function x(){
+        document.getElementById('name').innerHTML = '아이디를 입력하세요.';
+        document.getElementById('alert').style.display = 'block';
+    }
+    
+    function y(){
+        document.getElementById('name').innerHTML = '비밀번호를 입력하세요.';
+        document.getElementById('alert').style.display = 'block';
+    }
+    
+    
+
+    document.getElementById('close').addEventListener('click', function(){
+        document.getElementById('alert').style.display = 'none';
+    });
+    
+       </script>
+</body>
+</html>
